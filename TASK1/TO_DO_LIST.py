@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 """
- A to-do list helps a user effectively organize tasks
+ A to-do list GUI application that helps a user effectively organize tasks
  Author: Khakhu Ria
  Version: 19/09/2024
 """
@@ -65,7 +65,7 @@ class TaskFrame:
             self.taskText.focus_set()
 
     def complete_task(self):
-        """Mark the task as complete by applying a strikethrough effect."""
+        """Mark the task as complete by applying a strikethrough effect"""
         self.taskText.config(state=tk.NORMAL)
         self.taskText.tag_add("strike", "1.0", tk.END)
         self.taskText.tag_configure("strike", overstrike=True)
